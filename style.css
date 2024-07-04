@@ -1,0 +1,148 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #4a90e2;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.form-container {
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    padding: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-toggle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.toggle-btn {
+    flex: 1;
+    padding: 0.5em;
+    border: none;
+    background: #f4f4f4;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.toggle-btn:hover {
+    background: #ddd;
+}
+
+.toggle-btn.active {
+    background: #4a90e2;
+    color: #fff;
+}
+
+.form-wrapper {
+    position: relative;
+}
+
+.form {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.form.active {
+    display: block;
+    opacity: 1;
+}
+
+.form h2 {
+    margin-bottom: 1em;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
+.form input {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background: #357ab7;
+}
+.w3-button.w3-black:hover,
+.w3-button.w3-black:focus {
+  background-color: #333 !important;
+  color: #fff !important;
+}
+.content-container {
+    margin-top: 50px;
+}
+/* Add some basic styling */
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.employee-table th,
+.employee-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd; /* Add this line to create a vertical line */
+}
+
+.employee-table th {
+    background-color: #f2f2f2;
+}
+
+.employee-table td:last-child,
+.employee-table th:last-child {
+    border-right: none; /* Remove the right border for the last column */
+}
+
+/* Add spacing between the navigation bar and the header */
+.content-container {
+    margin-top: 50px;
+}
